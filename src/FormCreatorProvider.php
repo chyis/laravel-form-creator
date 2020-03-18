@@ -1,8 +1,8 @@
 <?php
 /**
  * FormBuilder表单生成器
- * Author: xaboy
- * Github: https://github.com/xaboy/form-builder
+ * Author: JerryLi<dream_imperator@163.com>
+ * Github: https://github.com/chyis/form-creator
  */
 
 namespace Chyis\LaravelFormCreator;
