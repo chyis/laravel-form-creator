@@ -1,0 +1,32 @@
+{
+    "name": "chyis/laravel-form-creator",
+    "description": "laravel编写的表单生成器，快速生成form表单。包含复选框、单选框、输入框、下拉选择框等元素以及,省市区三级联动,时间选择,日期选择,颜色选择,文件/图片上传等功能。",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JerryLi",
+            "email": "dream_imperator@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LaravelFormCreator\\": "./src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/chyis/laravel-form-creator/issues",
+        "source": "https://github.com/chyis/laravel-form-creator"
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "^5.0.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelFormCreator\\FormCreatorProvider"
+            ]
+        }
+    }
+}
