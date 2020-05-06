@@ -18,14 +18,16 @@ class FormCreatorProvider extends ServiceProvider
      */
     public function boot()
     {
-
         $this->loadViewsFrom(__DIR__ . '/views', 'form-creator');
 
         $this->publishes([
-            __DIR__ . '/views' => base_path('resources/views/vendor/form-creator')
+            __DIR__ . '/lang' => base_path('resources/lang')
         ], 'resources');
         $this->publishes([
-            __DIR__ . '/assets/form-create' => public_path('vendor/form-create')
+            __DIR__ . '/views' => base_path('resources/views/vendor/laravel-form-creator')
+        ], 'resources');
+        $this->publishes([
+            __DIR__ . '/assets/form-create' => public_path('vendor/laravel-form-creator')
         ], 'assets');
     }
 
